@@ -1,22 +1,105 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+/* variables */
+:root {
+  --primary: #ffc636;
+  --secondary: #0a0b5b;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* reset */
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
-#container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+li {
+  list-style-type: none;
 }
-.item {
-  font-style: 30px;
-  padding: 20px;
-  border: 1px solid black;
+
+/* base styles */
+body {
+  background: var(--secondary);
+  overflow-x: hidden;
+  font-family: "Rubik", sans-serif;
+}
+.button {
+  background: none;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 6px 12px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  font-size: 1em;
+}
+.button:hover {
+  color: #222;
+  background: var(--primary);
+}
+input,
+textarea {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 2px solid #9893d8;
+  color: #f2f2f2;
+  font-size: 1em;
+}
+
+/* fonts */
+/* @font-face {
+  font-family: "KronaOne Regular";
+  src: url("assets/fonts/KronaOne-Regular.ttf") format("truetype");
+} */
+h1,
+h2,
+h3,
+h4 {
+  color: #dddbff;
+  font-weight: normal;
+  line-height: 1.4em;
+}
+p,
+a,
+li {
+  color: #9893d8;
+  line-height: 1.4em;
+  font-size: 1em;
+}
+h1,
+h3 {
+  font-size: 1.2em;
+}
+h2 {
+  font-size: 1.6em;
+}
+h4 {
+  font-size: 1.1em;
+}
+.leading {
+  font-size: 1.1em;
+}
+
+/* mobile styles */
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+}
+
+/* large tablet & laptop styles */
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 20px;
+  }
 }
