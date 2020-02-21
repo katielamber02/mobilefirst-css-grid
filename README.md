@@ -39,6 +39,8 @@
 <img src="gitimages/4.png"  />
 <img src="gitimages/5.png"  />
 <img src="gitimages/6.png"  />
+
+
 ```
 #portfolio {
   /* background: url("assets/square_bg.png");
@@ -73,8 +75,8 @@ color: #9994f7;
 ```
 <img src="gitimages/7.png"  />
 <img src="gitimages/8.png"  />
-```
 
+```
 #skills {
 padding: 30px 20px;
 background: #07083e;
