@@ -1,74 +1,105 @@
-.projects {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-gap: 1px;
+```
+/* mobile styles */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  box-sizing: border-box;
 }
-.projects a {
-text-align: center;
-background: #9893d8;
-padding: 20px;
+.site-nav {
+  margin: 0 20px;
 }
+.site-nav h1 {
+  grid-column: 1/4;
+  grid-row: 1;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--primary);
+  display: inline-block;
+}
+.site-nav ul {
+  display: none;
+}
+#welcome {
+  padding: 0 20px 20px 20px;
+}
+.welcome-text {
+  grid-column: 1/6;
+}
+.welcome-text a {
+  margin: 20px 0;
+}
+.welcome-img {
+  grid-column: 6/9;
+}
+.welcome-img img {
+  width: 200%;
+}
+```
 
- <div className="projects grid">
-          <a href="#">
-            <img src="assets/project_1.png" alt="space race image" />
-            <h4>Space Race Game</h4>
-          </a>
-          <a href="#">
-            <img src="assets/project_2.png" alt="planet boy image" />
-            <h4>Planet Boy API</h4>
-          </a>
-          <a href="#">
-            <img src="assets/project_3.png" alt="captain cosmo image" />
-            <h4>Captain Cosmo Blog</h4>
-          </a>
- </div>
-<img src="gitimages/1.png"  />
-<img src="gitimages/2.png"  />
-
-Image Size Changed:
-.projects {
-display: grid;
-grid-template-columns: repeat(12, 1fr);
-gap: 1px;
-}
-.projects a {
-text-align: center;
-background: #9893d8;
-padding: 20px;
-}
-
-.projects img {
-max-width: 100%;
-}
-
-<img src="gitimages/3.png"  />
-
-Displaying On The Grid in Rows:
-.projects {
-display: grid;
-grid-template-columns: repeat(12, 1fr);
-gap: 1px;
-}
-.projects a {
-text-align: center;
-background: #9893d8;
-padding: 20px;
-}
-
-.projects img {
-max-width: 100%;
-}
-.projects a:nth-child(1) {
-grid-column: 2/6;
-grid-row: 1;
-}
-.projects a:nth-child(2) {
-grid-column: 8/12;
-grid-row: 1;
-}
-.projects a:nth-child(3) {
-grid-column: 5/9;
-grid-row: 2;
-}
 <img src="gitimages/4.png"  />
+<img src="gitimages/5.png"  />
+<img src="gitimages/6.png"  />
+```
+#portfolio {
+  /* background: url("assets/square_bg.png");
+  <Image source={require('../assets/background1.jpg')} /> */
+
+background-size: cover;
+background-repeat: no-repeat;
+background-position: bottom;
+padding: 30px 20px;
+}
+#portfolio h3 {
+margin-bottom: 0;
+text-align: center;
+}
+.projects {
+margin: 20px 0;
+}
+.projects a {
+grid-column: 1/9;
+display: flex;
+margin: 20px 0;
+}
+.projects a \* {
+margin: 0 20px;
+max-width: 40%;
+align-self: center;
+}
+.projects h4 {
+color: #9994f7;
+}
+
+```
+<img src="gitimages/7.png"  />
+<img src="gitimages/8.png"  />
+```
+
+#skills {
+padding: 30px 20px;
+background: #07083e;
+}
+#skills h3 {
+text-align: center;
+}
+#skills ul {
+margin: 40px 0;
+}
+#skills li {
+padding: 10px;
+background: rgba(0, 0, 0, 0.2);
+grid-column: span 4;
+text-align: center;
+}
+#skills img {
+height: 80px;
+margin: 10px auto;
+}
+#skills p {
+text-align: center;
+margin: 0 20px;
+}
+
+```
+<img src="gitimages/9.png"  />
+```
