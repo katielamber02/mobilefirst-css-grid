@@ -1,3 +1,4 @@
+<code>
 .projects {
 display: grid;
 grid-template-columns: 1fr 1fr 1fr;
@@ -23,10 +24,12 @@ padding: 20px;
             <h4>Captain Cosmo Blog</h4>
           </a>
  </div>
+ </code>
 <img src="gitimages/1.png"  />
 <img src="gitimages/2.png"  />
 
 Image Size Changed:
+<code>
 .projects {
 display: grid;
 grid-template-columns: repeat(12, 1fr);
@@ -41,10 +44,11 @@ padding: 20px;
 .projects img {
 max-width: 100%;
 }
-
+</code>
 <img src="gitimages/3.png"  />
 
 Displaying On The Grid in Rows:
+<code>
 .projects {
 display: grid;
 grid-template-columns: repeat(12, 1fr);
@@ -71,4 +75,5 @@ grid-row: 1;
 grid-column: 5/9;
 grid-row: 2;
 }
+</code>
 <img src="gitimages/4.png"  />
